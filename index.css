@@ -1,0 +1,685 @@
+@import url("https://fonts.googleapis.com/css2?family=Andada+Pro&family=Lato:wght@300;400&family=Open+Sans&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: auto;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Header */
+.header {
+  padding: 10px 0;
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header .business__name {
+  margin-left: 10%;
+  color: #623ed9;
+  font-family: "Andada Pro";
+}
+
+.header .business__menus {
+  margin-right: 10%;
+}
+
+.header a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Lato", consolas;
+  font-size: 15px;
+}
+
+.header a i {
+  color: #262626;
+  font-size: 15px;
+}
+
+.header a:hover i {
+  color: white;
+}
+
+.header a:hover {
+  background-color: #615cfd;
+  color: white;
+  transform: scale(1.05);
+  transition: 0.5s ease;
+}
+
+.header .icon {
+  display: none;
+}
+
+/* About Section */
+.about_section {
+  display: flex;
+  justify-content: space-between;
+  min-height: 900px;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.detail {
+  flex: 0.5;
+  margin: auto;
+  color: white;
+  font-weight: 1000;
+  text-align: right;
+}
+
+.detail .introduction {
+  float: right;
+  text-align: left;
+  width: auto;
+  margin-right: 5%;
+}
+
+.detail .introduction .hello-there {
+  font-size: 30px;
+  font-family: "Open Sans";
+  position: relative;
+  top: -10px;
+}
+
+.detail .introduction .myName {
+  color: white;
+  font-size: 52px;
+  font-family: "Andada Pro";
+  font-weight: 200;
+}
+
+.myName span {
+  font-weight: 600;
+}
+
+.detail .introduction .handlingJob {
+  height: 35px;
+  width: auto;
+  position: relative;
+  margin-top: 20px;
+}
+
+.detail .introduction .handlingJob .job {
+  font-family: "Andada Pro";
+  font-weight: 500;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 24px;
+  border: 3px solid white;
+}
+
+.hire_me_button {
+  padding: 18px 55px;
+  margin-top: 80px;
+  background-color: #ff3b3f;
+  border: 1px solid #4d4ae8;
+  border-radius: 1rem;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,
+    rgba(46, 54, 80, 0.075) 0 1px 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Open Sans";
+  text-transform: none;
+  transition: 0.6s ease all;
+}
+
+.introduction .hire_me_button:hover {
+  transform: scale(1.1);
+}
+
+/* Particles JS */
+#particles-js {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: red;
+  z-index: -99;
+
+  background-color: #061161;
+}
+
+.picSection {
+  flex: 0.5;
+  opacity: 1;
+  margin: auto;
+}
+
+.picSection .pic {
+  height: 500px;
+  width: 500px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #623ed9;
+  background-color: skyblue;
+  overflow: hidden;
+  margin-left: 50px;
+}
+
+.picSection img {
+  height: 100%;
+  width: 78%;
+  margin: auto;
+}
+
+/* Experience Section */
+.experience_section {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #eee;
+  padding: 45px 0;
+}
+
+.experience_section div {
+  height: 100%;
+  width: auto;
+  margin: 0 5%;
+  text-align: center;
+}
+
+.experience_section div img {
+  opacity: 0.5;
+}
+
+/* Skills Section */
+.skills_section {
+  height: auto;
+  width: 100%;
+  margin-top: 80px;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.skills_section .skills_right h3 {
+  color: #df6a17;
+  opacity: 0.8;
+  font-size: 45px;
+  font-family: "Andada Pro";
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+}
+
+.skills_section .skills .skills_left,
+.skills_section .skills .skills_right {
+  height: 600px;
+  width: 500px;
+}
+
+.skills_section .skills .skills_left {
+  background-size: cover;
+  background-image: url("./Images/skills_image.jpg");
+  background-position: center;
+}
+
+.skills .skills_right {
+  text-align: center;
+  position: relative;
+  padding: 0 50px;
+}
+
+.skills_right .download_cv {
+  margin-top: 100px;
+  margin-left: 200px;
+  padding: 18px 50px;
+  border-radius: 15px;
+  background-color: #623ed9;
+  opacity: 0.8;
+  color: white;
+  cursor: pointer;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+}
+
+.skills_right .download_cv:hover {
+  transition: 0.5s ease;
+  transform: scale(1.1);
+}
+
+.skills_right .skill {
+  text-align: left;
+  margin-top: 35px;
+  width: 100%;
+}
+
+.skills_right .skill p:nth-child(1) {
+  font-size: 15px;
+  margin-left: 3px;
+  font-family: "Lato", consolas;
+}
+
+.skills_right .skill p:nth-child(2) {
+  font-family: "Lato", consolas;
+  font-size: 13px;
+}
+
+.skills_right .skill div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills_right .skill div:nth-child(2) {
+  position: relative;
+  height: 10px;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid #34568b;
+  margin-top: 5px;
+  transition: 1s ease all;
+}
+
+.skill div:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 20px;
+  background-color: #615cfd;
+  width: 0%;
+}
+
+.skill .skill_html::before {
+  transition: 1s ease;
+  width: 95% !important;
+}
+
+.skill .skill_javascript::before {
+  transition: 1s ease;
+  width: 84% !important;
+}
+
+.skill .skill_nodejs::before {
+  transition: 1s ease;
+  width: 82% !important;
+}
+
+.skill .skill_reactjs::before {
+  transition: 1s ease;
+  width: 62% !important;
+}
+
+.skill .skill_reactnative::before {
+  transition: 1s ease;
+  width: 54% !important;
+}
+
+/* REVIEWS SECTION */
+.reviews_section {
+  background-color: #f3f3f3;
+  padding: 50px 0;
+  height: auto;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.reviews_section p {
+  color: #df6a17;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.reviews_section h3 {
+  color: #615cfd;
+  margin-top: 10px;
+  font-size: 45px;
+  font-family: "Andada Pro", consolas;
+}
+
+.reviews_section .swipeReviews {
+  margin-top: 58px;
+}
+
+.reviews_section .swiper-wrapper {
+  height: 500px;
+  width: auto;
+  align-items: center;
+  cursor: pointer;
+}
+
+.reviews_section .swiper-slide {
+  height: 100%;
+}
+
+.reviews_section .review-content {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+}
+
+.review-content .review-content-header {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.review-content .review-content-header div {
+  display: flex;
+  align-items: center;
+}
+
+.review-content .review-content-header div:nth-child(1) img {
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+  background-color: orange;
+  padding: 10px;
+}
+
+.review-content .review-content-header div:nth-child(2) img {
+  padding-left: 15px;
+}
+
+.review-content .review-content-header h4 {
+  margin-left: 15px;
+  font-family: "Open Sans", consolas;
+  font-size: 18px;
+}
+
+.review-content p {
+  margin-top: 20px;
+  color: gray;
+}
+
+.review-content span {
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+  float: right;
+  font-size: 38px;
+  margin-right: 20px;
+  color: #615cfd;
+  opacity: 0.7;
+}
+
+.reviews_section .review {
+  background-color: #fff;
+  opacity: 0.3;
+  height: 80%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+  border-radius: 10px;
+}
+
+div.swiper-slide.review.swiper-slide-active {
+  height: 100% !important;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #615cfd;
+  color: #9997d3;
+}
+
+/* PROJECTS */
+.projects_section {
+  padding: 45px 0;
+  height: auto;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.projects_section p {
+  color: #df6a17;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.projects_section h3 {
+  color: #615cfd;
+  font-size: 45px;
+  font-family: "Andada Pro", consolas;
+}
+
+.projects_section .projects {
+  position: relative;
+  padding-top: 50px;
+  max-width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 40px;
+  grid-auto-flow: dense;
+}
+
+.projects div {
+  position: relative;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  opacity: 0.6;
+  transition: 0.5s ease all;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px !important;
+  cursor: pointer;
+}
+
+.projects div:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.projects div:nth-child(1) {
+  background-image: url("./Images/project_images/project_1.png");
+}
+
+.projects div:nth-child(2) {
+  background-image: url("./Images/project_images/project_2.png");
+}
+
+.projects div:nth-child(3) {
+  background-image: url("./Images/project_images/project_3.png");
+}
+
+.projects div:nth-child(4) {
+  background-image: url("./Images/project_images/project_4.png");
+}
+
+.projects div:nth-child(5) {
+  background-image: url("./Images/project_images/project_5.png");
+}
+
+/* Contact */
+.contact_section {
+  margin-top: 80px;
+  width: 100%;
+  height: auto;
+  background-image: url("./Images/contact_image.jpeg"),
+    linear-gradient(rgba(28, 46, 74, 1), rgba(28, 46, 74, 1));
+  background-blend-mode: overlay;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.contact_section h3 {
+  font-size: 30px;
+  font-family: "Andada Pro";
+  color: white;
+}
+
+.contact_section > p {
+  margin: auto;
+  margin-top: 10px;
+  width: 65%;
+  color: white;
+  font-size: 16px;
+  font-family: "Open Sans";
+}
+
+.contact_section .contact {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.contact .contact_left,
+.contact .contact_right {
+  height: 500px;
+  width: 40%;
+}
+
+.contact_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact .contact_left .contact_info {
+  display: flex;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.contact_left i {
+  padding: 25px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+  font-size: 18px;
+}
+
+.contact_info div:nth-child(1) {
+  width: 60px;
+  height: auto;
+}
+
+.contact_info div:nth-child(2) {
+  text-align: left;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact_info h4 {
+  font-family: "Andada Pro";
+  color: #ff3b3f;
+  font-size: 19px;
+  margin-top: -5px;
+}
+
+.contact_info p {
+  color: white;
+  font-size: 16px;
+  font-family: "Open Sans";
+}
+
+.contact .contact_right {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+  text-align: left;
+}
+
+.contact_right h4 {
+  margin: 40px 50px;
+  font-family: "Lato";
+  font-size: 28px;
+  color: #262626;
+}
+
+.contact_right form {
+  margin: 0 50px;
+}
+
+.contact form input,
+.contact form textarea {
+  height: 50px;
+  margin-top: 20px;
+  width: 90% !important;
+  border: none;
+  border-bottom: 2px solid #615cfd;
+  font-family: "Andada Pro";
+  padding-left: 5px;
+}
+
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+  color: black;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+  outline: none;
+}
+
+.contact form textarea {
+  margin-top: 40px;
+  font-size: 14px;
+  resize: none;
+}
+
+.contact form .contact_button {
+  padding: 18px 55px;
+  margin-top: 50px;
+  background-color: #4d4ae8;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Open Sans";
+  transition: 0.6s ease all;
+}
+
+.contact form .contact_button:hover {
+  transform: scale(1.1);
+}
+
+/* Scroll To Top */
+.scrollToTop {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  padding: 25px;
+  background-color: #ff3b3f;
+  cursor: pointer;
+  z-index: 15;
+  border-radius: 10px;
+}
+
+.scrollToTop i {
+  font-size: 25px;
+  color: white;
+}
+
+/* Fixed Header Functionality CSS */
+.fixedHeader {
+  position: fixed;
+  z-index: 20;
+  border: 1px solid lightgray;
+}
